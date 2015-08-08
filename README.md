@@ -43,10 +43,12 @@ Check out the repo
 [stilr-classnames](https://github.com/chcokr/stilr-classnames) for more
 information.
 
-## This app was bootstrapped using
-[chcokr-webapp-starter](https://github.com/chcokr/chcokr-webapp-starter)
+## This app was bootstrapped using chcokr-webapp-starter
 
-This app used `chcokr-webapp-starter` as a template to start off of.
+
+This app used
+[chcokr-webapp-starter](https://github.com/chcokr/chcokr-webapp-starter) as a
+template to start off of.
 You can always fetch and merge the recent changes from `chcokr-webapp-starter`
 into this project:
 
