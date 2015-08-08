@@ -1,0 +1,10 @@
+{
+  "firebase": "",
+  "public": "dist",
+  "ignore": [
+    "src/",
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
