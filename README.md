@@ -43,7 +43,7 @@ Check out the repo
 [stilr-classnames](https://github.com/chcokr/stilr-classnames) for more
 information.
 
-## This app was bootstrapped using chcokr-webapp-starter
+## chcokr-webapp-starter
 
 
 This app used
