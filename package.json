@@ -1,5 +1,6 @@
 {
   "name": "CHANGE_PROJECT_NAME_PLZ",
+  "private": true,
   "version": "0.0.0",
   "scripts": {
     "build": "webpack",
