@@ -24,7 +24,7 @@
     "babel-plugin-stilr-classnames": "^0.0.0",
     "bootstrap": "^3.3.5",
     "chcokr-bootstrap-reset": "^0.1.0",
-    "chcokr-eslintrc": "0.0.0",
+    "chcokr-eslintrc": "^0.1.0",
     "css-loader": "^0.18.0",
     "eslint": "^1.4.1",
     "eslint-loader": "^1.0.0",
