@@ -33,6 +33,7 @@
     "hjs-webpack": "^2.13.1",
     "json-loader": "^0.5.2",
     "less": "^2.5.1",
+    "less-interop-loader": "^0.1.0",
     "less-loader": "^2.2.0",
     "postcss": "^5.0.5",
     "postcss-loader": "^0.6.0",
