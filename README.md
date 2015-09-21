@@ -44,9 +44,9 @@ You can always fetch and merge the recent changes from `chcokr-webapp-starter`
 into this project:
 
 ```bash
-git remote add upstream https://github.com/chcokr/chcokr-webapp-starter.git
-git fetch upstream
-git merge upstream/master
+git remote add starter https://github.com/chcokr/chcokr-webapp-starter.git
+git fetch starter
+git merge starter/master
 npm install
 ```
 
