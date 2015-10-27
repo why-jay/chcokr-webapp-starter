@@ -2,7 +2,7 @@ var ExtractStilrPlugin = require('extract-stilr-webpack-plugin');
 
 // hjs-webpack prepares a lot of the webpack config boilerplate for us!
 var config = require('hjs-webpack')({
-  in: 'src/index.jsx',
+  in: 'src/entry_point_do_not_touch.jsx',
   out: 'dist',
   clearBeforeBuild: true,
   output: {

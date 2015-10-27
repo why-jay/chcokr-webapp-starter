@@ -41,10 +41,6 @@ CI](https://travis-ci.org) deploys the release build onto Firebase Hosting.
 Make sure the environment variables `FIREBASE_EMAIL` and `FIREBASE_PASSWORD` are
 properly set on Travis CI.
 
-## Entry point
-
-`src/index.jsx` is the starting point of the entire web app.
-
 ## Background
 
 This is a single-page web application built with the following choices:
