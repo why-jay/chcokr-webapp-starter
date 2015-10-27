@@ -5,6 +5,7 @@ import 'babel/polyfill';
 import App from './App';
 
 import React from 'react';
+import ReactDOM from 'react-dom';
 
 let containerElem = document.getElementById('react_app_container');
 if (!containerElem) {
@@ -12,4 +13,4 @@ if (!containerElem) {
   containerElem.id = 'react_app_container';
   document.body.appendChild(containerElem);
 }
-React.render(<App />, containerElem);
+ReactDOM.render(<App />, containerElem);
