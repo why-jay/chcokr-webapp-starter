@@ -10,6 +10,13 @@ var config = getConfig({
   }
 });
 
+// Bootstrap includes a woff2 file, but hjs-webpack doesn't have url-loader set
+// up for woff2 files.
+config.module.loaders.push({
+  test: /\.woff2$/,
+  loader: 'url?limit=10000'
+});
+
 config.eslint = {
   configFile: './node_modules/chcokr-eslintrc/.eslintrc'
 };
