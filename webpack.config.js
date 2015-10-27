@@ -1,7 +1,7 @@
 var ExtractStilrPlugin = require('extract-stilr-webpack-plugin');
-var getConfig = require('hjs-webpack');
 
-var config = getConfig({
+// hjs-webpack prepares a lot of the webpack config boilerplate for us!
+var config = require('hjs-webpack')({
   in: 'src/index.jsx',
   out: 'dist',
   clearBeforeBuild: true,
@@ -10,6 +10,9 @@ var config = getConfig({
   }
 });
 
+// But hjs-webpack doesn't take care of everything, so we do a little more
+// below.
+
 // Bootstrap includes a woff2 file, but hjs-webpack doesn't have url-loader set
 // up for woff2 files.
 config.module.loaders.push({
@@ -17,6 +20,7 @@ config.module.loaders.push({
   loader: 'url?limit=10000'
 });
 
+// Let's set up some linting!
 config.eslint = {
   configFile: './node_modules/chcokr-eslintrc/.eslintrc'
 };
