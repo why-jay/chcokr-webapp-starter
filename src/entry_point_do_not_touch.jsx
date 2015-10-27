@@ -1,3 +1,5 @@
+import 'file?name=favicon.ico!./App.favicon.ico';
+
 import './App.less';
 
 import 'babel/polyfill';
