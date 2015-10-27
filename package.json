@@ -3,8 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "build": "webpack",
-    "start": "webpack-dev-server",
+    "build": "./node_modules/webpack/bin/webpack.js",
+    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "npm run build"
   },
   "babel": {
