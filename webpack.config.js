@@ -7,7 +7,15 @@ var config = require('hjs-webpack')({
   clearBeforeBuild: true,
   output: {
     hash: true
-  }
+  },
+
+  // If the hostname is not '0.0.0.0' but is something like 'localhost', when
+  // webpack is run inside a guest VM, the webpack-dev-server is not accessible
+  // from host machine.
+  hostname: '0.0.0.0',
+
+  // Make sure this port number matches the ports specified in the Vagrantfile.
+  port: 23971
 });
 
 // But hjs-webpack doesn't take care of everything, so we do a little more

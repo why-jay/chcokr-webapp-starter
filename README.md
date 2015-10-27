@@ -2,14 +2,37 @@
 
 ## Commands
 
-Don't forget to `npm install` the first thing after you clone this repo.
+### Starting Vagrant
 
-`npm start` - Starts a
-[hot-reloaded](https://gaearon.github.io/react-hot-loader/) server for
-development (go to `http://localhost:3000/` on your browser).
+In order to avoid "it works in my box!" situations as much as possible, this
+project uses [Vagrant](https://docs.vagrantup.com/v2/getting-started/) and
+assumes you know its basics.
+If you're not familiar with Vagrant, check out that link and learn about it.
 
-`npm run build` - Builds a static web app inside `dist/` for production
-deployment.
+```bash
+vagrant up # Wait ~5 min if this is the first time you run this command.
+vagrant ssh
+cd /app # This directory is where you will find all the project files on the VM.
+```
+
+### Development mode (live-reloaded)
+
+Inside the `/app` directory in the Vagrant box, run `npm start`.
+Wait ~1 min.
+When you get a success message, go to `http://localhost:23791/` on a browser on
+your host machine.
+You should see the app load!
+
+Now make a change to any part of the code base.
+You will see the changes reflect on the browser on the go.
+This is called hot-loading/live-reloading.
+
+### Production mode
+
+Inside the `/app` directory in the Vagrant box, run `npm run build`.
+Wait ~2 min.
+Then, inside the `./dist/` directory, you will find an optimized static web app
+whose starting point is `index.html`.
 
 ## How to deploy
 
