@@ -22,7 +22,7 @@ Vagrant.configure(2) do |config|
     sudo npm install -g npm@3
     cd /app
     npm install
-    npm install # Don't know why, but this installs more deps.
+    find ./node_modules/ -exec touch {} \; # npm start breaks without this :(
   SHELL
 
 end
