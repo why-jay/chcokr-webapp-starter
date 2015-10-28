@@ -4,6 +4,10 @@ Vagrant.configure(2) do |config|
 
   config.vm.synced_folder ".", "/app"
 
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = "2048" # npm install seems to require a bit of RAM.
+  end
+
   config.vm.network :forwarded_port,
 
     # Ports have to be identical, in order for hot-loading to work.
