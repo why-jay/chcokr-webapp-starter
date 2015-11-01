@@ -1,5 +1,5 @@
 {
-  "firebase": "",
+  "firebase": "chcokr-webapp-start",
   "public": "dist",
   "ignore": [
     "src/",

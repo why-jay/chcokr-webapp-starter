@@ -43,8 +43,10 @@ whose starting point is `index.html`.
 
 Every time the `master` branch gets a new commit, [Travis
 CI](https://travis-ci.org) deploys the release build onto Firebase Hosting.
-Make sure the environment variables `FIREBASE_EMAIL` and `FIREBASE_PASSWORD` are
-properly set on Travis CI.
+Make sure the environment variable `FIREBASE_TOKEN` set on Travis CI to your
+token (read
+[this](https://github.com/firebase/firebase-tools#using-with-ci-systems) to
+learn how to obtain this token).
 
 ## Background
 
