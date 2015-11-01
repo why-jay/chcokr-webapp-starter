@@ -1,5 +1,7 @@
 Vagrant.configure(2) do |config|
 
+  Vagrant.require_version ">= 1.7.4"
+
   config.vm.box = "ubuntu/trusty64"
 
   config.vm.synced_folder ".", "/app"
