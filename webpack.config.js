@@ -39,4 +39,9 @@ config.module.preLoaders.push({
   loader: 'eslint'
 });
 
+// This is where you set options to pass into babel-loader.
+config.module.loaders[0].loaders[1] = 'babel?' +
+  'presets[]=es2015' +
+  '&presets[]=react';
+
 module.exports = config;
