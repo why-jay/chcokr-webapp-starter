@@ -1,5 +1,10 @@
 # CHANGE_TITLE_PLZ
 
+[![Build
+status](https://travis-ci.org/chcokr/name-game.svg)](https://travis-ci.org/chcokr/chcokr-webapp-starter)
+[![Dependency
+Status](https://david-dm.org/chcokr/name-game.svg)](https://david-dm.org/chcokr/chcokr-webapp-starter)
+
 ## Commands
 
 ### Starting Vagrant
