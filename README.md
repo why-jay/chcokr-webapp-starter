@@ -42,9 +42,9 @@ whose starting point is `index.html`.
 ### Troubleshooting
 
 Whenever `npm start` or `npm run build` doesn't work inside the Vagrant VM,
-`vagrant destroy` is your best friend.
-Then run `vagrant up` to completely reset the VM to the state where `npm start`
-and `npm run build` were known to work.
+`vagrant destroy && vagrant up` is your best friend.
+This resets the VM to the state where `npm start` and `npm run build` were known
+to work.
 A lot of work has gone into making sure these commands work out of the box.
 
 If `npm start` or `npm run build` still breaks, then you've discovered a new
