@@ -78,6 +78,12 @@ via [LESS](http://lesscss.org) syntax.
 This app used version **0.0.0** of
 [chcokr-webapp-starter](https://github.com/chcokr/chcokr-webapp-starter) as a
 template to start off of.
+
+The Vagrant box used by this repo comes with:
+- ubuntu 14.04.3
+- node.js 0.12.7
+- npm 3.3.10
+
 You can always fetch and merge the recent changes from `chcokr-webapp-starter`
 into this project:
 
