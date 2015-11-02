@@ -2,13 +2,11 @@ Vagrant.configure(2) do |config|
 
   Vagrant.require_version ">= 1.7.4"
 
-  config.vm.box = "ubuntu/trusty64"
+  config.vm.box = "chcokr/chcokr-webapp-starter"
+  config.vm.box_version = "0.0.0" # This must match the starter version, which
+                                  # can be found in the README.
 
   config.vm.synced_folder ".", "/app"
-
-  config.vm.provider "virtualbox" do |vb|
-    vb.memory = "2048" # npm install seems to require a bit of RAM.
-  end
 
   config.vm.network :forwarded_port,
 
@@ -17,14 +15,11 @@ Vagrant.configure(2) do |config|
     guest: 23971, host: 23971
 
   config.vm.provision "shell", inline: <<-SHELL
-    sudo apt-get update
-    sudo apt-get install -y g++
-    curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
-    sudo apt-get install -y nodejs
-    sudo npm install -g npm@3
+    sudo rm -rf /app/node_modules
+    mkdir /app/node_modules
+    sudo cp -r /chcokr-node-modules/* /app/node_modules/
     cd /app
-    npm install
-    find ./node_modules/ -exec touch {} \; # npm start breaks without this :(
+    sudo npm install
   SHELL
 
 end

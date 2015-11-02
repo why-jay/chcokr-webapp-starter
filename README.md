@@ -15,7 +15,7 @@ assumes you know its basics.
 If you're not familiar with Vagrant, check out that link and learn about it.
 
 ```bash
-vagrant up # Wait ~5 min if this is the first time you run this command.
+vagrant up # This might take a few minutes.
 vagrant ssh
 cd /app # This directory is where you will find all the project files on the VM.
 ```
@@ -38,6 +38,18 @@ Inside the `/app` directory in the Vagrant box, run `npm run build`.
 Wait ~2 min.
 Then, inside the `./dist/` directory, you will find an optimized static web app
 whose starting point is `index.html`.
+
+### Troubleshooting
+
+Whenever `npm start` or `npm run build` doesn't work inside the Vagrant VM,
+`vagrant destroy` is your best friend.
+Then run `vagrant up` to completely reset the VM to the state where `npm start`
+and `npm run build` were known to work.
+A lot of work has gone into making sure these commands work out of the box.
+
+If `npm start` or `npm run build` still breaks, then you've discovered a new
+bug.
+Please report it.
 
 ## How to deploy
 
@@ -63,7 +75,7 @@ via [LESS](http://lesscss.org) syntax.
 
 ## chcokr-webapp-starter
 
-This app used
+This app used version **0.0.0** of
 [chcokr-webapp-starter](https://github.com/chcokr/chcokr-webapp-starter) as a
 template to start off of.
 You can always fetch and merge the recent changes from `chcokr-webapp-starter`
