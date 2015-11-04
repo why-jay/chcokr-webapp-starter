@@ -42,6 +42,6 @@ config.module.preLoaders.push({
 // This is where you set options to pass into babel-loader.
 config.module.loaders[0].loaders[1] = 'babel?' +
   'presets[]=es2015' +
-  '&presets[]=react';
+  '&plugins[]=transform-react-jsx';
 
 module.exports = config;
