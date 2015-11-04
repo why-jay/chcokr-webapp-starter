@@ -4,5 +4,5 @@ node_js:
 
 after_success:
   - mkdir /home/travis/tmp
-  - sudo $(which npm) install -g firebase-tools
+  - sudo $(which npm) install -g firebase-tools@2.0.2
   - if [[ "${TRAVIS_PULL_REQUEST}" == "false" ]]; then firebase deploy --token "$FIREBASE_TOKEN"; fi
