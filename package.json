@@ -8,7 +8,7 @@
     "test": "npm run build"
   },
   "dependencies": {
-    "autoprefixer": "6.0.3",
+    "autoprefixer": "6.1.0",
     "babel": "6.0.15",
     "babel-core": "6.0.20",
     "babel-eslint": "4.1.4",
