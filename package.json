@@ -10,7 +10,7 @@
   "dependencies": {
     "autoprefixer": "6.0.3",
     "babel": "6.0.15",
-    "babel-core": "6.0.20",
+    "babel-core": "6.1.19",
     "babel-eslint": "4.1.4",
     "babel-loader": "6.0.1",
     "babel-plugin-transform-react-jsx": "6.0.18",
