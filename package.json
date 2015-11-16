@@ -5,7 +5,7 @@
   "scripts": {
     "build": "vagrant up && vagrant ssh -c \"cd /app && ./node_modules/webpack/bin/webpack.js\"",
     "start": "vagrant up && vagrant ssh -c \"cd /app && ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --watch-poll\"",
-    "test": "npm run build"
+    "test": "./node_modules/webpack/bin/webpack.js"
   },
   "dependencies": {
     "autoprefixer": "6.1.0",
