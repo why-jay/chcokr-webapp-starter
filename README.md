@@ -48,7 +48,7 @@ find an optimized static web app whose starting point is `index.html`.
 ### Troubleshooting
 
 Whenever `npm start` or `npm run build` doesn't work inside the Vagrant VM,
-`vagrant destroy && vagrant up` is your best friend.
+`vagrant destroy` is your best friend.
 This resets the VM to the state where `npm start` and `npm run build` were known
 to work.
 A lot of work has gone into making sure these commands work out of the box.
