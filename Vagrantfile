@@ -3,8 +3,7 @@ Vagrant.configure(2) do |config|
   Vagrant.require_version ">= 1.7.4"
 
   config.vm.box = "chcokr/chcokr-webapp-starter"
-  config.vm.box_version = "0.0.2" # This must match the starter version, which
-                                  # can be found in the README.
+  config.vm.box_version = "0.0.2"
 
   config.vm.synced_folder ".", "/app"
 

@@ -81,7 +81,7 @@ via [LESS](http://lesscss.org) syntax.
 
 ## chcokr-webapp-starter
 
-This app used version **0.0.2** of
+This app used version **0.0.3** of
 [chcokr-webapp-starter](https://github.com/chcokr/chcokr-webapp-starter) as a
 template to start off of.
 
