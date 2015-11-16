@@ -3,8 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "build": "./node_modules/webpack/bin/webpack.js",
-    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --watch-poll",
+    "build": "vagrant up && vagrant ssh -c \"cd /app && ./node_modules/webpack/bin/webpack.js\"",
+    "start": "vagrant up && vagrant ssh -c \"cd /app && ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --watch-poll\"",
     "test": "npm run build"
   },
   "dependencies": {

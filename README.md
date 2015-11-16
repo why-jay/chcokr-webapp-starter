@@ -14,16 +14,16 @@ project uses [Vagrant](https://docs.vagrantup.com/v2/getting-started/) and
 assumes you know its basics.
 If you're not familiar with Vagrant, check out that link and learn about it.
 
-```bash
-vagrant up # This might take a few minutes.
-vagrant ssh
-cd /app # This directory is where you will find all the project files on the VM.
-```
-
 ### Development mode (live-reloaded)
 
-Inside the `/app` directory in the Vagrant box, run `npm start`.
-Wait ~1 min.
+```Bash
+npm start
+```
+
+If this is the first time you're running this command, or if you do not have the
+version of the Vagrant box required by `Vagrantfile`, you'll have to wait quite
+a few minutes in order for Vagrant to download the VM from the cloud.
+
 When you get a success message, go to `http://localhost:23791/` on a browser on
 your host machine.
 You should see the app load!
@@ -34,10 +34,16 @@ This is called hot-loading/live-reloading.
 
 ### Production mode
 
-Inside the `/app` directory in the Vagrant box, run `npm run build`.
-Wait ~2 min.
-Then, inside the `./dist/` directory, you will find an optimized static web app
-whose starting point is `index.html`.
+```Bash
+npm run build
+```
+
+If this is the first time you're running this command, or if you do not have the
+version of the Vagrant box required by `Vagrantfile`, you'll have to wait quite
+a few minutes in order for Vagrant to download the VM from the cloud.
+
+Once the command succeeds, go to the `./dist/` directory, and there you will
+find an optimized static web app whose starting point is `index.html`.
 
 ### Troubleshooting
 
