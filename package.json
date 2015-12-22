@@ -19,7 +19,7 @@
     "bootstrap": "3.3.5",
     "chcokr-bootstrap-reset": "0.2.0",
     "chcokr-eslintrc": "0.1.0",
-    "css-loader": "0.23.0",
+    "css-loader": "0.23.1",
     "eslint": "1.9.0",
     "eslint-loader": "1.1.1",
     "file-loader": "0.8.4",
