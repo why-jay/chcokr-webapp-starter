@@ -8,7 +8,7 @@
     "test": "./node_modules/webpack/bin/webpack.js"
   },
   "dependencies": {
-    "autoprefixer": "6.1.0",
+    "autoprefixer": "6.3.0",
     "babel": "6.1.18",
     "babel-core": "6.1.21",
     "babel-eslint": "4.1.5",
