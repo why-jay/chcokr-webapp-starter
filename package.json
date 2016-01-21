@@ -24,7 +24,7 @@
     "eslint-loader": "1.1.1",
     "file-loader": "0.8.4",
     "history": "1.13.1",
-    "hjs-webpack": "5.0.0",
+    "hjs-webpack": "7.0.0",
     "less": "2.5.3",
     "less-interop-loader": "0.1.0",
     "less-loader": "2.2.1",
