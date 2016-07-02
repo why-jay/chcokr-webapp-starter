@@ -21,7 +21,7 @@
     "chcokr-eslintrc": "0.1.0",
     "css-loader": "0.23.0",
     "eslint": "1.9.0",
-    "eslint-loader": "1.1.1",
+    "eslint-loader": "1.4.0",
     "file-loader": "0.8.4",
     "history": "1.13.1",
     "hjs-webpack": "5.0.0",
