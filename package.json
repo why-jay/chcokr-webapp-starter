@@ -11,7 +11,7 @@
     "autoprefixer": "6.1.0",
     "babel": "6.1.18",
     "babel-core": "6.1.21",
-    "babel-eslint": "4.1.5",
+    "babel-eslint": "6.1.1",
     "babel-loader": "6.1.0",
     "babel-plugin-transform-react-jsx": "6.1.18",
     "babel-polyfill": "6.1.19",
