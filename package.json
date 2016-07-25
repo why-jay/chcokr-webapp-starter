@@ -16,7 +16,7 @@
     "babel-plugin-transform-react-jsx": "6.1.18",
     "babel-polyfill": "6.1.19",
     "babel-preset-es2015": "6.1.18",
-    "bootstrap": "3.3.5",
+    "bootstrap": "3.3.7",
     "chcokr-bootstrap-reset": "0.2.0",
     "chcokr-eslintrc": "0.1.0",
     "css-loader": "0.23.0",
