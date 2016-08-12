@@ -20,7 +20,7 @@
     "chcokr-bootstrap-reset": "0.2.0",
     "chcokr-eslintrc": "0.1.0",
     "css-loader": "0.23.0",
-    "eslint": "1.9.0",
+    "eslint": "3.3.0",
     "eslint-loader": "1.1.1",
     "file-loader": "0.8.4",
     "history": "1.13.1",
